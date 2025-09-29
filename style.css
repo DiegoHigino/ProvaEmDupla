@@ -1,0 +1,164 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* GRID PRINCIPAL */
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #222;
+  color: #fff;
+}
+
+.header .menu {
+  display: flex;
+  gap: 20px;
+}
+
+.header .menu a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.header .btn a {
+  background: #fff;
+  color: #222;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Conteúdo principal */
+.main {
+  grid-column: 1 / 4;
+  padding: 20px;
+}
+
+/* Grid de artigos */
+.artigos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin-bottom: 8px;
+  color: #222;
+}
+
+/* Biografia da página 2 */
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pessoa {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  grid-column: 1 / 4;
+}
+
+.footer-left {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-right ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Alinha itens para a direita */
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+
+/* Imagem de perfil redonda */
+.perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ddd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ajustes no card de biografia */
+.pessoa {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
