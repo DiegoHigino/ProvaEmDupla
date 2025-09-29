@@ -114,6 +114,28 @@ a {
   text-align: center;
 }
 
+.pessoa h2 {
+  margin-bottom: 20px;
+}
+
+.pessoa p {
+  margin-bottom: 10px;
+}
+
+.pessoa a {
+  color: #007bff;
+  display: inline-block;
+}
+
+.pessoa hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pessoa p{
+  margin-bottom: 20px;
+}
+
 /* Rodapé */
 
 .footer {
